@@ -1,5 +1,7 @@
 tasks:
   - init: |
-      echo 'TODO: build project'
+      echo 'Init'
+      npm run setup
     command: |
-      echo 'TODO: start app'
+      cd ui
+      npm run dev
