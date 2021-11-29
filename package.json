@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-ui": "cd ui && npm install",
+    "install-api": "cd api && npm install",
+    "setup": "npm run install-ui && npm run install-api"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/kchojhu/nest-next/issues"
   },
-  "homepage": "https://github.com/kchojhu/nest-next#readme"
+  "homepage": "https://github.com/kchojhu/nest-next#readme",
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
 }
